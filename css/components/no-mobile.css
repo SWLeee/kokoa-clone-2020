@@ -1,0 +1,19 @@
+#no-mobile {
+  position: absolute;
+  z-index: 99;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(219, 47, 47);
+  display: flex;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
+
+/* 아래 규칙은 width가 700px 이거나 더 작을때 작동  */
+@media screen and (max-width: 700px) {
+  #no-mobile {
+    display: none;
+  }
+}
